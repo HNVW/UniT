@@ -1,5 +1,6 @@
 {
   "name": "UniT.InternalDI",
+  "overrideReferences": true,
   "references": [
     "UniT.DI.InternalDI",
     "UniT.Logging.Unity.InternalDI",

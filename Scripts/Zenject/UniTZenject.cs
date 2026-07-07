@@ -17,11 +17,11 @@ namespace UniT
     using UnityEngine;
     using UnityEngine.EventSystems;
     using Zenject;
-    #if !UNITY_WEBGL
+#if !UNITY_WEBGL
     using UniT.Data.Storages.File.DI;
-    #else
+#else
     using UniT.Data.Storages.PlayerPrefs.DI;
-    #endif
+#endif
 
     public static class UniTZenject
     {
@@ -36,11 +36,11 @@ namespace UniT
             container.BindDefaultSerializer();
             container.BindUnitySerializer();
             container.BindAssetStorage();
-            #if !UNITY_WEBGL
+#if !UNITY_WEBGL
             container.BindFileStorage();
-            #else
+#else
             container.BindPlayerPrefsStorage();
-            #endif
+#endif
             container.BindDataManager();
             container.BindObjectPoolManager();
             container.BindEntityManager();

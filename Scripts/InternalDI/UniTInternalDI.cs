@@ -17,11 +17,11 @@ namespace UniT
     using UniT.UI.Default.DI;
     using UnityEngine;
     using UnityEngine.EventSystems;
-    #if !UNITY_WEBGL
+#if !UNITY_WEBGL
     using UniT.Data.Storages.File.DI;
-    #else
+#else
     using UniT.Data.Storages.PlayerPrefs.DI;
-    #endif
+#endif
 
     public static class UniTInternalDI
     {
@@ -35,11 +35,11 @@ namespace UniT
             container.AddDefaultSerializer();
             container.AddUnitySerializer();
             container.AddAssetStorage();
-            #if !UNITY_WEBGL
+#if !UNITY_WEBGL
             container.AddFileStorage();
-            #else
+#else
             container.AddPlayerPrefsStorage();
-            #endif
+#endif
             container.AddDataManager();
             container.AddObjectPoolManager();
             container.AddEntityManager();

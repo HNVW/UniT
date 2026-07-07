@@ -17,11 +17,11 @@ namespace UniT
     using UnityEngine;
     using UnityEngine.EventSystems;
     using VContainer;
-    #if !UNITY_WEBGL
+#if !UNITY_WEBGL
     using UniT.Data.Storages.File.DI;
-    #else
+#else
     using UniT.Data.Storages.PlayerPrefs.DI;
-    #endif
+#endif
 
     public static class UniTVContainer
     {
@@ -36,11 +36,11 @@ namespace UniT
             builder.RegisterDefaultSerializer();
             builder.RegisterUnitySerializer();
             builder.RegisterAssetStorage();
-            #if !UNITY_WEBGL
+#if !UNITY_WEBGL
             builder.RegisterFileStorage();
-            #else
+#else
             builder.RegisterPlayerPrefsStorage();
-            #endif
+#endif
             builder.RegisterDataManager();
             builder.RegisterObjectPoolManager();
             builder.RegisterEntityManager();

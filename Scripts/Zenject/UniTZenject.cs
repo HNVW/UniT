@@ -1,27 +1,21 @@
 #nullable enable
 namespace UniT
 {
-    using Audio.Default.DI;
-    using Data.Converters.Default.DI;
-    using Data.Default.DI;
-    using Data.Serializers.Default.DI;
-    using Data.Serializers.Unity.DI;
-    using Data.Storages.Asset.DI;
-    using Entities.Default.DI;
-    using Lifecycle.Default.DI;
-    using Logging.Unity.DI;
-    using Pooling.Default.DI;
-    using ResourceManagement.Addressables.DI;
-    using ResourceManagement.Unity.DI;
-    using UI.Default.DI;
+    using Audio.DI;
+    using Data.Converters.DI;
+    using Data.DI;
+    using Data.Serializers.DI;
+    using Data.Storages.DI;
+    using DI;
+    using Entities.DI;
+    using Lifecycle.DI;
+    using Logging.DI;
+    using Pooling.DI;
+    using ResourceManagement.DI;
+    using UI.DI;
     using UnityEngine;
     using UnityEngine.EventSystems;
     using Zenject;
-#if !UNITY_WEBGL
-    using Data.Storages.File.DI;
-#else
-    using Data.Storages.PlayerPrefs.DI;
-#endif
 
     public static class UniTZenject
     {

@@ -1,26 +1,26 @@
 #nullable enable
 namespace UniT
 {
-    using UniT.Audio.Default.DI;
-    using UniT.Data.Converters.Default.DI;
-    using UniT.Data.Default.DI;
-    using UniT.Data.Serializers.Default.DI;
-    using UniT.Data.Serializers.Unity.DI;
-    using UniT.Data.Storages.Asset.DI;
-    using UniT.Entities.Default.DI;
-    using UniT.Lifecycle.Default.DI;
-    using UniT.Logging.Unity.DI;
-    using UniT.Pooling.Default.DI;
-    using UniT.ResourceManagement.Addressables.DI;
-    using UniT.ResourceManagement.Unity.DI;
-    using UniT.UI.Default.DI;
+    using Audio.Default.DI;
+    using Data.Converters.Default.DI;
+    using Data.Default.DI;
+    using Data.Serializers.Default.DI;
+    using Data.Serializers.Unity.DI;
+    using Data.Storages.Asset.DI;
+    using Entities.Default.DI;
+    using Lifecycle.Default.DI;
+    using Logging.Unity.DI;
+    using Pooling.Default.DI;
+    using ResourceManagement.Addressables.DI;
+    using ResourceManagement.Unity.DI;
+    using UI.Default.DI;
     using UnityEngine;
     using UnityEngine.EventSystems;
     using VContainer;
 #if !UNITY_WEBGL
-    using UniT.Data.Storages.File.DI;
+    using Data.Storages.File.DI;
 #else
-    using UniT.Data.Storages.PlayerPrefs.DI;
+    using Data.Storages.PlayerPrefs.DI;
 #endif
 
     public static class UniTVContainer

@@ -2,7 +2,7 @@
   "name": "com.frostbun.unit",
   "displayName": "UniT",
   "description": "A lightweight Unity library for common tasks",
-  "version": "5.0.0",
+  "version": "5.0.1",
   "unity": "6000.3",
   "license": "MIT",
   "author": {
@@ -11,18 +11,18 @@
     "url": "https://github.com/frostbun"
   },
   "dependencies": {
-    "com.frostbun.unit.utilities": "5.0.0",
-    "com.frostbun.unit.extensions": "5.0.0",
-    "com.frostbun.unit.di": "5.0.0",
-    "com.frostbun.unit.logging": "5.0.0",
-    "com.frostbun.unit.resourcemanagement": "5.0.0",
-    "com.frostbun.unit.data": "5.0.0",
-    "com.frostbun.unit.pooling": "5.0.0",
-    "com.frostbun.unit.entities": "5.0.0",
-    "com.frostbun.unit.ui": "5.0.0",
-    "com.frostbun.unit.audio": "5.0.0",
-    "com.frostbun.unit.lifecycle": "5.0.0",
-    "com.frostbun.unit.easings": "5.0.0",
+    "com.frostbun.unit.utilities": "5.0.1",
+    "com.frostbun.unit.extensions": "5.0.1",
+    "com.frostbun.unit.di": "5.0.1",
+    "com.frostbun.unit.logging": "5.0.1",
+    "com.frostbun.unit.resourcemanagement": "5.0.1",
+    "com.frostbun.unit.data": "5.0.1",
+    "com.frostbun.unit.pooling": "5.0.1",
+    "com.frostbun.unit.entities": "5.0.1",
+    "com.frostbun.unit.ui": "5.0.1",
+    "com.frostbun.unit.audio": "5.0.1",
+    "com.frostbun.unit.lifecycle": "5.0.1",
+    "com.frostbun.unit.easings": "5.0.1",
     "com.unity.addressables": "3.1.0"
   }
 }

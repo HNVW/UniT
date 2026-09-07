@@ -27,11 +27,8 @@ namespace UniT
             container.BindDefaultSerializer();
             container.BindUnitySerializer();
             container.BindAssetStorage();
-#if !UNITY_WEBGL
-            container.BindFileStorage();
-#else
-            container.BindPlayerPrefsStorage();
-#endif
+            if (Application.platform is RuntimePlatform.WebGLPlayer) container.BindPlayerPrefsStorage();
+            else container.BindFileStorage();
             container.BindDataManager();
             container.BindObjectPoolManager();
             container.BindEntityManager();

@@ -25,11 +25,8 @@ namespace UniT
             container.AddDefaultSerializer();
             container.AddUnitySerializer();
             container.AddAssetStorage();
-#if !UNITY_WEBGL
-            container.AddFileStorage();
-#else
-            container.AddPlayerPrefsStorage();
-#endif
+            if (Application.platform is RuntimePlatform.WebGLPlayer) container.AddPlayerPrefsStorage();
+            else container.AddFileStorage();
             container.AddDataManager();
             container.AddObjectPoolManager();
             container.AddEntityManager();

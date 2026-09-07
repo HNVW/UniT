@@ -27,11 +27,8 @@ namespace UniT
             builder.RegisterDefaultSerializer();
             builder.RegisterUnitySerializer();
             builder.RegisterAssetStorage();
-#if !UNITY_WEBGL
-            builder.RegisterFileStorage();
-#else
-            builder.RegisterPlayerPrefsStorage();
-#endif
+            if (Application.platform is RuntimePlatform.WebGLPlayer) builder.RegisterPlayerPrefsStorage();
+            else builder.RegisterFileStorage();
             builder.RegisterDataManager();
             builder.RegisterObjectPoolManager();
             builder.RegisterEntityManager();
